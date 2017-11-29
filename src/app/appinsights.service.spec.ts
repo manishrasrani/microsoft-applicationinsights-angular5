@@ -1,5 +1,5 @@
 import { TestBed, inject } from '@angular/core/testing';
-import { AppInsightsService } from './logger.service';
+import { AppInsightsService } from './appinsights.service';
 
 describe('AppInsightsService', () => {
   beforeEach(() => {
