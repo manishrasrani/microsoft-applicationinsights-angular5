@@ -1,13 +1,13 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { AppInsights } from 'applicationinsights-js';
 
 @Injectable()
 export class AppInsightsService {
     private config: Microsoft.ApplicationInsights.IConfig = {
-        instrumentationKey: 'ee846cbc-14ab-4233-905e-a13bfd30200d'
+        instrumentationKey: this.instrumentationKey
     };
 
-    constructor() {
+    constructor( @Inject('instrumentationKey') private instrumentationKey: string) {
         if (!AppInsights.config) {
             AppInsights.downloadAndSetup(this.config);
         }

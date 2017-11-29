@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { AppInsightsService } from './appinsights.service';
 
 @NgModule({
@@ -9,4 +9,12 @@ import { AppInsightsService } from './appinsights.service';
   providers: [AppInsightsService],
   bootstrap: []
 })
-export class AppInsightsModule { }
+export class AppInsightsModule {
+
+  static forRoot(instrumentationKey: string): ModuleWithProviders {
+    return {
+      ngModule: AppInsightsModule,
+      providers: [AppInsightsService, { provide: 'instrumentationKey', useValue: instrumentationKey }]
+    };
+  }
+}
