@@ -1,7 +1,10 @@
 {
   "name": "microsoft-applicationinsights-angular5",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "This is a wrapper library for Angular 5+ modules over Microsoft Application Insights SDK.",
+  "author": {
+    "name": "Manish Ramchand"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
