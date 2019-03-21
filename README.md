@@ -1,6 +1,6 @@
-# microsoft-applicationinsights-angular5
+# Microsoft Application Insights with Angular
 
-This is a wrapper library for Angular 5+ modules over Microsoft Application Insights SDK.
+This is a wrapper library for Angular 5+ (Angular 5.X.X, Angular 6.X.X and Angular 7.X.X) modules over Microsoft Application Insights SDK.
 
 Working example at [https://github.com/manishrasrani/microsoft-applicationinsights-angular5-example](https://github.com/manishrasrani/microsoft-applicationinsights-angular5-example)
 
